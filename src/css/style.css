@@ -1,0 +1,76 @@
+@font-face {
+  font-family: RSU;
+  src: url(font/RSU_Regular.ttf);
+}
+
+* {
+  font-family: RSU;
+}
+
+.content-view {
+  word-break: break-word;
+  padding: 1% 5%;
+  text-align: center;
+}
+
+.md-triple-line {
+  word-wrap: break-word;
+  margin: 1.5% 0 0 0;
+  padding: 1% 0;
+}
+
+.menu_link {
+  cursor: pointer;
+}
+
+.menu_link:hover {
+  background: #f5f5f0;
+}
+
+.menu {
+  background: #fff;
+}
+
+#active {
+  background: #f5f5f0;
+}
+
+#stLogin {
+  text-align: left;
+  width: 50%;
+  margin-left: 25%;
+}
+
+#stLogin img {
+  margin-left: 30%;
+}
+
+#stLogin input {
+  font-size: 18px;
+  margin-bottom: 2%;
+}
+
+#stLogin label {
+  font-size: 20px;
+}
+
+@media (min-width: 200px) and (max-width: 1024px) {
+  #stLogin {
+    width: 100%;
+    margin-left: 0;
+  }
+  #stLogin img {
+    margin-left: 40%;
+  }
+  #stLogin input {
+    font-size: 30px;
+  }
+  #stLogin label {
+    font-size: 30px;
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+  #stLogin > .ui > .buttons > .massive {
+  	font-size: 50px;
+  } 
+}
