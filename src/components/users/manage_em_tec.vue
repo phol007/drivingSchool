@@ -1,5 +1,5 @@
 <template>
-  <div class="manage_adm_own">
+  <div class="manage_em_tec">
     <div class="content-view">
       <div style="font-size:40px; padding:1%;">
         {{ msg }}
@@ -37,4 +37,4 @@
   </div>
 </template>
 
-<script type="text/javascript" src="../../js/users/manage_adm_own.js"></script>
+<script type="text/javascript" src="../../js/users/manage_em_tec.js"></script>

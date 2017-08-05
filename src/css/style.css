@@ -19,6 +19,11 @@
   padding: 1% 0;
 }
 
+.md-th {
+  background: #e5e7ea;
+  color: #000;
+}
+
 .menu_link {
   cursor: pointer;
 }
@@ -70,7 +75,7 @@
     margin-bottom: 2%;
     margin-top: 5%;
   }
-  #stLogin > .ui > .buttons > .massive {
-  	font-size: 50px;
-  } 
+  #stLogin>.ui>.buttons>.massive {
+    font-size: 50px;
+  }
 }

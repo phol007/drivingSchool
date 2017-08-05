@@ -4,6 +4,9 @@ import Login from '@/components/login'
 import MainMenu from '@/components/main_menu'
 import MNuser from '@/components/users/manage_user'
 import MNowner from '@/components/users/manage_adm_own'
+import MNEmploy from '@/components/users/manage_em_tec'
+import MNCustomer from '@/components/users/manage_customer'
+import MNCourse from '@/components/course/manage_course'
 
 Vue.use(Router)
 
@@ -28,6 +31,21 @@ export default new Router({
       path: '/mn_user_owner',
       name: 'mn_user_owner',
       component: MNowner
+    },
+    {
+      path: '/mn_user_Employ',
+      name: 'mn_user_Employ',
+      component: MNEmploy
+    },
+    {
+      path: '/mn_user_custo',
+      name: 'mn_user_custo',
+      component: MNCustomer
+    },
+    {
+      path: '/mn_cors',
+      name: 'mn_cors',
+      component: MNCourse
     }
   ]
 })
