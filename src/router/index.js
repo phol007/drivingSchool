@@ -7,6 +7,7 @@ import MNowner from '@/components/users/manage_adm_own'
 import MNEmploy from '@/components/users/manage_em_tec'
 import MNCustomer from '@/components/users/manage_customer'
 import MNCourse from '@/components/course/manage_course'
+import TBTrain from '@/components/tableTrainning/calendar'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/mn_cors',
       name: 'mn_cors',
       component: MNCourse
+    },
+    {
+      path: '/mn_schedule',
+      name: 'mn_schedule',
+      component: TBTrain
     }
   ]
 })

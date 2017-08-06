@@ -59,6 +59,26 @@
   font-size: 20px;
 }
 
+.train table{
+  width: 100%;
+  border: 1px solid #000;
+}
+  .train thead, tbody, th, td {
+    border: 1px solid #000;
+  }
+  .train tbody {
+    text-align: left;
+  }
+  .train td {
+    padding: 1%;
+
+  }
+  .train th {
+    font-size: 16px;
+    background: #d3d3c4;
+    padding: 1%;
+  }
+
 @media (min-width: 200px) and (max-width: 1024px) {
   #stLogin {
     width: 100%;
