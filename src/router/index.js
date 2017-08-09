@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from '@/components/login'
-import MainMenu from '@/components/main_menu'
-import MNuser from '@/components/users/manage_user'
-import MNowner from '@/components/users/manage_adm_own'
-import MNEmploy from '@/components/users/manage_em_tec'
-import MNCustomer from '@/components/users/manage_customer'
-import MNCourse from '@/components/course/manage_course'
-import TBTrain from '@/components/tableTrainning/calendar'
+const Login = () => import('@/components/login')
+const MainMenu = () => import('@/components/main_menu')
+const MNuser = () => import('@/components/users/manage_user')
+const MNowner = () => import('@/components/users/manage_adm_own')
+const MNEmploy = () => import('@/components/users/manage_em_tec')
+const MNCustomer = () => import('@/components/users/manage_customer')
+const MNCourse = () => import('@/components/course/manage_course')
+const TBTrain = () => import('@/components/tableTrainning/calendar')
 
 Vue.use(Router)
 
