@@ -12,7 +12,9 @@ export default {
         { no: 1, id: '001', username: 'suthin', fname: 'สุทิน', lname: 'ผาสุข', Roleuser: 4 },
         { no: 2, id: '002', username: 'patithin', fname: 'ปฏิทิน', lname: 'ผาดอย', Roleuser:  2},
         { no: 3, id: '003', username: 'mana', fname: 'มานะ', lname: 'ผาหนาม', Roleuser: 3 }
-      ]
+      ],
+      MDuser: '',
+      RoleUser: ''
     }
   },
   methods: {

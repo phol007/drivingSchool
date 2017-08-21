@@ -6,10 +6,8 @@
 				<div class="ui form" style="width:25%; margin-left:75%;">
 				  	<div class="field" style="text-align:left;">
 					    <label>ลักษณะการแสดงผล : </label>
-						<select class="ui fluid dropdown">
-							<option>วันนี้</option>
-							<option>สับดาห์</option>
-							<option>ทั้งเดือน</option>
+						<select class="ui fluid dropdown" v-model='selectType' @change="getDetail">
+							<option v-for="types in select_type" :value="types.id">{{ types.text }}</option>
 						</select>
 					</div>
 				</div>
@@ -19,27 +17,37 @@
 				<table>
 					<thead>
 						<tr>
-							<th>No</th>
-							<th>Date | Time</th>
-							<th>Teacher</th>
-							<th>Student</th>
-							<th>Location</th>
-							<th>Car Type</th>
+							<th width="5%">No</th>
+							<th width="15%">Date | Time</th>
+							<th width="10%">Teacher</th>
+							<th width="10%">Student</th>
+							<th width="13%">Location</th>
+							<th width="7%">Car Type</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td style="text-align:center; padding:0;">1</td>
-							<td>Monday, 12 Aus 2016 | 10:00 - 12:00 AM</td>
-							<td>Teacher. ฤกษณะ  ขับเร็ว</td>
-							<td>คุณ มาแรง  แซงเรียบ</td>
-							<td>ลัดดาแลน ถ.โชตนาเชียงใหม่ - ฝาง อ.แม่ริม จ.เชียงใหม่</td>
-							<td>ยี่ห้อ : Demax <br /> ทะเบียน : กกน 56123 <br /> เกียร์ : ธรรมดา</td>
+						<tr v-for="details in train_detail">
+							<td style="text-align:center; padding:0;">{{ details.no }}</td>
+							<td>{{ details.date }}</td>
+							<td>{{ details.teacher }}</td>
+							<td>{{ details.student }}</td>
+							<td>{{ details.location }}</td>
+							<td>{{ details.car }}</td>
 						</tr>
 					</tbody>
 				</table>
 			</p>
 		</div>
+	<md-speed-dial class="md-fab-bottom-right">
+      <md-button class="md-fab">
+        <md-icon class="md-size-2x">add</md-icon>
+      </md-button>
+
+     <!-- <md-button class="md-fab md-mini md-clean">
+        <md-icon>email</md-icon>
+      </md-button> -->
+
+    </md-speed-dial>
 	</div>
 </template>
 

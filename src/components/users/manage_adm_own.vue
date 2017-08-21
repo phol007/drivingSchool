@@ -22,7 +22,7 @@
             <md-table-cell style="text-align:left; padding-left:1.5%; font-size:16px;">{{ user.fname }}&nbsp;&nbsp;{{ user.lname }}</md-table-cell>
             <md-table-cell style="font-size:16px;"> 
               <select id="RoleUser" v-bind="RoleUser" class="ui fluid dropdown" @change="changeRole(user.id)">
-                <option v-for="Role in Roles" v-bind:value="Role.Role_id" :selected="Role.Role_id == user.Roleuser ? 'selected' : ''" >
+                <option v-for="Role in Roles" :value="Role.Role_id" :selected="Role.Role_id == user.Roleuser ? 'selected' : ''" >
                   {{ Role.Role_name }}
                 </option>
               </select>
@@ -34,6 +34,16 @@
         </md-table-body>
       </md-table>
     </div>
+    <md-speed-dial class="md-fab-bottom-right">
+      <md-button class="md-fab">
+        <md-icon class="md-size-2x">add</md-icon>
+      </md-button>
+
+     <!-- <md-button class="md-fab md-mini md-clean">
+        <md-icon>email</md-icon>
+      </md-button> -->
+
+    </md-speed-dial>
   </div>
 </template>
 

@@ -1,12 +1,14 @@
 <template>
   <div id="app">
       <md-toolbar>
-        <md-button class="md-icon-button" @click="toggleLeftSidenav" style="padding:0;" v-show="this.$route.path!='/'">          
+        <md-button class="md-icon-button" @click="toggleLeftSidenav" style="padding:0; width:5%; margin-left:0;" v-show="this.$route.path!='/'">          
           <i class="material-icons" style="font-size:40px">reorder</i>
         </md-button>
-        <h1 class="md-title" style="margin-left:35%; font-size:40px; padding-top:0.5%; font-family:RSU;"><img src="./assets/logo.png" height="40" width="40"> โรงเรียนสอนขับรถ</h1>
+        <h1 class="md-title" style="width:87.5%; text-align:center; font-size:40px; padding-top:0.5%; font-family:RSU;"><img src="./assets/logo.png" height="40" width="40"> โรงเรียนสอนขับรถ</h1>
+        <md-button class="md-icon-button" @click="backTopage" style="width: 5%; float:left;padding:0;" v-show="this.nodePage == 0">          
+            <i class="material-icons" style="font-size:40px;">backspace</i>
+        </md-button>
       </md-toolbar>
-
       <div>        
         <router-view></router-view>
       </div>

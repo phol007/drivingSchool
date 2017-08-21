@@ -13,7 +13,9 @@ export default {
         { no: 1, id: '001', username: 'administrator', fname: 'สุทิน', lname: 'ผาสุข', Roleuser: 1 },
         { no: 2, id: '002', username: 'own001', fname: 'ปฏิทิน', lname: 'ผาดอย', Roleuser: 2 },
         { no: 3, id: '003', username: 'em003', fname: 'มานะ', lname: 'ผาหนาม', Roleuser: 2 }
-      ]
+      ],
+      MDuser: '',
+      RoleUser: ''
     }
   },
   methods: {

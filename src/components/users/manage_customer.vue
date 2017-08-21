@@ -4,6 +4,7 @@
       <div style="font-size:40px; padding:1%;">
         {{ msg }}
       </div>
+      <p style="text-align:right; cursor:pointer; font-weight:bold;">ผู้ใช้งานใหม่ 10 <span style="color:red;">new</span></p>
       <md-table v-once >
         <md-table-header>
           <md-table-row class="md-th">
@@ -30,6 +31,16 @@
         </md-table-body>
       </md-table>
     </div>
+    <md-speed-dial class="md-fab-bottom-right">
+      <md-button class="md-fab">
+        <md-icon class="md-size-2x">add</md-icon>
+      </md-button>
+
+     <!-- <md-button class="md-fab md-mini md-clean">
+        <md-icon>email</md-icon>
+      </md-button> -->
+
+    </md-speed-dial>
   </div>
 </template>
 

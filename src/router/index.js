@@ -8,6 +8,8 @@ const MNEmploy = () => import('@/components/users/manage_em_tec')
 const MNCustomer = () => import('@/components/users/manage_customer')
 const MNCourse = () => import('@/components/course/manage_course')
 const TBTrain = () => import('@/components/tableTrainning/calendar')
+const Package = () => import('@/components/package/cars')
+const Static = () => import('@/components/static/main_static')
 
 Vue.use(Router)
 
@@ -52,6 +54,16 @@ export default new Router({
       path: '/mn_schedule',
       name: 'mn_schedule',
       component: TBTrain
+    },
+    {
+      path: '/mn_package',
+      name: 'mn_package',
+      component: Package
+    },
+    {
+      path: '/mn_statistic',
+      name: 'mn_statistic',
+      component: Static
     }
   ]
 })

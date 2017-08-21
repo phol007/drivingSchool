@@ -17,7 +17,8 @@ export default {
       ],
       menu_lists: [{ id: 1, text: 'manege user', image: require('../assets/user.png'), link: 'mn_user' }, { id: 2, text: 'manege position', image: require('../assets/permission.png'), link: 'mn_permission' }, { id: 2, text: 'manege menu', image: require('../assets/menu.png'), link: 'mn_menu' }],
       Username: "",
-      password: ""
+      password: "",
+      nodePage: 0
     }
   },
   methods: {

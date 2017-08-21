@@ -34,6 +34,16 @@
         </md-table-body>
       </md-table>
     </div>
+    <md-speed-dial class="md-fab-bottom-right">
+      <md-button class="md-fab">
+        <md-icon class="md-size-2x">add</md-icon>
+      </md-button>
+
+     <!-- <md-button class="md-fab md-mini md-clean">
+        <md-icon>email</md-icon>
+      </md-button> -->
+
+    </md-speed-dial>
   </div>
 </template>
 
