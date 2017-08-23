@@ -9,7 +9,7 @@
             <i class="material-icons" style="font-size:40px;">backspace</i>
         </md-button>
       </md-toolbar>
-      <div>        
+      <div>    
         <router-view></router-view>
       </div>
 

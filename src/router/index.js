@@ -10,6 +10,7 @@ const MNCourse = () => import('@/components/course/manage_course')
 const TBTrain = () => import('@/components/tableTrainning/calendar')
 const Package = () => import('@/components/package/cars')
 const Static = () => import('@/components/static/main_static')
+const FormUser = () => import('@/components/users/form_user')
 
 Vue.use(Router)
 
@@ -64,6 +65,11 @@ export default new Router({
       path: '/mn_statistic',
       name: 'mn_statistic',
       component: Static
+    },
+    {
+      path: '/Form_user',
+      name: 'Form_user',
+      component: FormUser
     }
   ]
 })

@@ -52,7 +52,7 @@ export default {
       }
     },
     backTopage () {
-       window.history.back()
+      window.history.back()
     } 
   },
   mounted () {

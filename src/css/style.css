@@ -3,7 +3,7 @@
   src: url(font/Kanit-Light.ttf);
 }
 
-* {
+*, h1 {
   font-family: 'RSU';
 }
 

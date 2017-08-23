@@ -16,7 +16,7 @@
           <div class="ui buttons massive" style="width:100%;">
             <button class="ui button positive" type="submit"><i class="arrow circle right icon"></i>&nbsp;&nbsp;&nbsp;Login</button>
             <div class="or"></div>
-            <button class="ui blue button" >Register <i class="angle double right icon"></i></button>
+            <button class="ui blue button" @click="goTo('/Form_user')">Register <i class="angle double right icon"></i></button>
           </div>
         </div>
       </form>
