@@ -52,7 +52,7 @@ export default {
       }
     },
     backTopage () {
-      window.history.back()
+      this.$router.go(window.history.back())
     } 
   },
   mounted () {

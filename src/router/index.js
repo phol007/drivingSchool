@@ -11,6 +11,7 @@ const TBTrain = () => import('@/components/tableTrainning/calendar')
 const Package = () => import('@/components/package/cars')
 const Static = () => import('@/components/static/main_static')
 const FormUser = () => import('@/components/users/form_user')
+const FormMem = () => import('@/components/users/form_member')
 
 Vue.use(Router)
 
@@ -70,6 +71,11 @@ export default new Router({
       path: '/Form_user',
       name: 'Form_user',
       component: FormUser
+    },
+    {
+      path: '/Form_member',
+      name: '/Form_member',
+      component: FormMem
     }
   ]
 })

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <md-toolbar>
+      <md-toolbar style="position:fixed; top:0; width:100%;">
         <md-button class="md-icon-button" @click="toggleLeftSidenav" style="padding:0; width:5%; margin-left:0;" v-show="this.$route.path!='/'">          
           <i class="material-icons" style="font-size:40px">reorder</i>
         </md-button>
@@ -10,7 +10,7 @@
         </md-button>
       </md-toolbar>
       <div>    
-        <router-view></router-view>
+        <router-view style="position:static; margin-top:80px;"></router-view>
       </div>
 
       <md-sidenav class="md-left" ref="leftSidenav">
