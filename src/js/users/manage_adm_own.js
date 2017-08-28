@@ -1,6 +1,6 @@
 export default {
   name: 'manage_adm_own',
-  data() {
+  data () {
     return {
       msg: 'จัดการระบบสิทธิผู้จัดการ',
       Roles: [
@@ -15,12 +15,21 @@ export default {
         { no: 3, id: '003', username: 'em003', fname: 'มานะ', lname: 'ผาหนาม', Roleuser: 2 }
       ],
       MDuser: '',
-      RoleUser: ''
+      Role: ''
     }
   },
   methods: {
-    goTo(path) {
+    goTo (path) {
       this.$router.push(path)
+    },
+    changeRole (id, data) {
+      // alert(id+", "+data)
+      for(var i = 1; i <= this.user_lists.length; i++){
+        if(i==(id-1)){
+          this.user_lists.Roleuser = data
+        }
+      }
+     // console.log(JSON.stringify(this.user_lists))
     }
   }
 }

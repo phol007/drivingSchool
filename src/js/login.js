@@ -44,7 +44,7 @@ export default {
       } else {
         alert("Useranem or password invalid!!")
       }
-      console.log(this.$router.user_id)
+      //console.log(this.$router.user_id)
     },
     goTo(path) {
       this.$router.push(path)
